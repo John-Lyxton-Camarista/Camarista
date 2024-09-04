@@ -198,4 +198,29 @@ element_2 <- score[3]
 element_1
 element_2
 ```
+14. *Create a vector a = c(1,2,NA,4,NA,6,7).
+a. Change the NA to 999 using the codes print(a,na.print="-999").
+
+b. Write the R code and its output. Describe the output.
+```{r}
+a = c(1, 2, 999, 4, 999, 6, 7)
+print(a, na.print="-999")
+```
+- the value of NA when it was not changed was -999. but when it was changed to 999, the value becomes 999 too.
+
+
+15. A special type of function calls can appear on the left hand side of the assignment
+operator as in > class(x) <- "foo".
+Follow the codes below:
+name = readline(prompt="Input your name: ")
+age = readline(prompt="Input your age: ")
+print(paste("My name is",name, "and I am",age ,"years old."))
+print(R.version.string)
+What is the output of the above code?
+```{r}
+name = readline(prompt="Input your name: ")
+age = readline(prompt="Input your age: ")
+print(paste("My name is",name, "and I am",age ,"years old."))
+print(R.version.string)
+```
 
